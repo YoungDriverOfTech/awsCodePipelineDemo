@@ -1,9 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /*
+  - source: /
     destination: /home/ec2-user/server
-
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
@@ -19,9 +18,5 @@ hooks:
       runas: ec2-user
   ApplicationStart:
     - location: scripts/server_start.sh
-      timeout: 300
-      runas: ec2-user
-  ValidateService:
-    - location: scripts/server_validate.sh
       timeout: 300
       runas: ec2-user
