@@ -1,4 +1,4 @@
-FROM java:openjdk-8u111-alpine
+FROM adoptopenjdk/openjdk11:latest
 
 RUN mkdir /app
 
