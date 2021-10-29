@@ -1,3 +1,3 @@
 #!/bin/bash
-mkdir aaaa
-exit 0
+cd /home/ec2-user/server
+rm -rf *
