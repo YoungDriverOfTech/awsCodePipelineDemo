@@ -1,4 +1,3 @@
 #!/bin/bash
-exit 0
-docker build -f Dockerfile -t aws-pipeline-demo:0.0.1 .
-docker container start aws-pipeline-demo:0.0.1
+cd /home/ec2-user/server
+docker run --name awspipeline -d -p 8080:8080 target/aws-pipeline-demo:0.0.1
