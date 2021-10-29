@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /aws-pipeline-demo-build
+  - source: /*
     destination: /home/ec2-user/server
 
 hooks:
