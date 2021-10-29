@@ -17,4 +17,3 @@ phases:
 artifacts:
   files:
     - target/awsPipelineDemo-0.0.1-SNAPSHOT.jar
-  name: awsPipelineDemo.jar
